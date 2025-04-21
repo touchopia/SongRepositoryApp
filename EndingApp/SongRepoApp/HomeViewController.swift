@@ -5,7 +5,6 @@
 //  Created by Phil Wright on 4/20/25.
 //
 
-
 import UIKit
 import MusicKit
 
@@ -195,11 +194,6 @@ class HomeViewController: UIViewController {
             }
         }
     }
-
-
-    // Unused functions removed for brevity (loadSongByID, markSongAsPlayed, addSongToFavorites)
-    // You can add them back if needed for other functionality.
-
 }
 
 // MARK: - UITableViewDelegate, UITableViewDataSource
@@ -290,34 +284,3 @@ extension HomeViewController: UISearchResultsUpdating, UISearchBarDelegate {
          }
      }
 }
-
-// MARK: - Supporting Classes and Extensions
-//class SongTableViewCell: UITableViewCell {
-//    func configure(with song: Song) { /* Configure cell appearance */
-//        textLabel?.text = song.title
-//        detailTextLabel?.text = song.artistName
-//    }
-//}
-
-//class PlaybackViewController: UIViewController { var song: Song? }
-//class SongRepositoryManager {
-//    static let shared = SongRepositoryManager()
-//    func searchSongs(term: String) async throws -> [Song] { /* Actual search logic */ return [] }
-//    func addSong(_ song: Song) { /* Add logic */ }
-//    func addToRecentlyPlayed(_ song: Song) { /* Add logic */ }
-//    func addToFavorites(_ song: Song) { /* Add logic */ }
-//}
-//
-//// MusicKit requires struct definitions or typealiases if not using real framework
-//struct Song: Identifiable { // Make sure Song conforms to Identifiable
-//    var id: MusicItemID
-//    var title: String?
-//    var artistName: String?
-//    // Add other properties as needed from MusicKit.Song
-//}
-//struct MusicItemID: Hashable { let rawValue: String } // Basic identifiable ID
-
-// Make sure MusicKit types used are defined if you're not importing the actual framework
-// typealias MusicItemID = String // Or use a struct as above
-// typealias MusicAuthorization = MusicKit.MusicAuthorization // Assuming MusicKit import
-// typealias MusicCatalogResourceRequest = MusicKit.MusicCatalogResourceRequest
