@@ -226,7 +226,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let playbackVC = PlaybackViewController()
         playbackVC.song = selectedSong
         // Consider presenting modally or pushing onto navigation stack
-        playbackVC.modalPresentationStyle = .fullScreen // Or .automatic, etc.
+        playbackVC.modalPresentationStyle = .popover // Or .automatic, etc.
         present(playbackVC, animated: true, completion: nil)
 
         tableView.deselectRow(at: indexPath, animated: true) // Deselect after presenting
